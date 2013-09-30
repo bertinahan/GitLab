@@ -2,6 +2,7 @@ package ca.ubc.cpsc310.gitlab.client.user;
 
 import java.util.ArrayList;
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,12 +47,37 @@ public class User implements IUser {
 //	{
 //		
 //>>>>>>> async
+//=======
+//import java.util.List;
+//
+//import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
+//
+//public class User implements IUser {
+//
+//	
+//	private static final long serialVersionUID = -4678920906536621479L;
+//	
+//	private List<ProductItem> shoppingCart = new ArrayList<ProductItem>();
+//	private List<ProductItem> wishList = new ArrayList<ProductItem>();
+//	
+//	private String name;
+//	private String language;
+//
+//	
+//	public User()
+//	{
+//		
+//>>>>>>> async
 	}
 	
 	@Override
 	public String getLanguage() {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		return (String) data.get(LANG);
+//=======
+//		return language;
+//>>>>>>> async
 //=======
 //		return language;
 //>>>>>>> async
@@ -60,7 +86,11 @@ public class User implements IUser {
 	@Override
 	public String getName() {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		return (String) data.get(NAME);
+//=======
+//		return name;
+//>>>>>>> async
 //=======
 //		return name;
 //>>>>>>> async
@@ -69,7 +99,11 @@ public class User implements IUser {
 	@Override
 	public List<ProductItem> getWishList() {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		return (List<ProductItem>) data.get(WISHLIST);
+//=======
+//		return wishList;
+//>>>>>>> async
 //=======
 //		return wishList;
 //>>>>>>> async
@@ -78,7 +112,11 @@ public class User implements IUser {
 	@Override
 	public List<ProductItem> getShoppingCart() {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		return (List<ProductItem>) data.get(SHOPPINGCART);
+//=======
+//		return shoppingCart;
+//>>>>>>> async
 //=======
 //		return shoppingCart;
 //>>>>>>> async
@@ -87,7 +125,11 @@ public class User implements IUser {
 	@Override
 	public void setLanguage(String language) {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		data.put(LANG,language);
+//=======
+//		this.language = language;
+//>>>>>>> async
 //=======
 //		this.language = language;
 //>>>>>>> async
@@ -97,7 +139,11 @@ public class User implements IUser {
 	@Override
 	public void setName(String name) {
 //<<<<<<< HEAD
+//<<<<<<< HEAD
 		data.put(NAME, name);
+//=======
+//		this.name = name;
+//>>>>>>> async
 //=======
 //		this.name = name;
 //>>>>>>> async
@@ -106,6 +152,7 @@ public class User implements IUser {
 
 	@Override
 	public void addItemToWishList(ProductItem o) {
+//<<<<<<< HEAD
 //<<<<<<< HEAD
 		((List<ProductItem>) data.get(WISHLIST)).add(o);
 	}
@@ -134,10 +181,26 @@ public class User implements IUser {
 //		this.shoppingCart.add(o);
 //		
 //>>>>>>> async
+//=======
+//		this.wishList.add(o);
+//		
+//	}
+//	@Override
+//	
+//	public void removeItemFromWishList(ProductItem o) {
+//		this.wishList.remove(o);
+//	}
+//	
+//	@Override
+//	public void addItemToShoppingCart(ProductItem o) {
+//		this.shoppingCart.add(o);
+//		
+//>>>>>>> async
 	}
 
 	@Override
 	public void removeItemFromShoppingCart(ProductItem o) {
+//<<<<<<< HEAD
 //<<<<<<< HEAD
 		((List<ProductItem>) data.get(SHOPPINGCART)).add(o);
 	}
@@ -147,6 +210,11 @@ public class User implements IUser {
 //		this.shoppingCart.remove(o);
 //	}
 //
+//
+//>>>>>>> async
+//=======
+//		this.shoppingCart.remove(o);
+//	}
 //
 //>>>>>>> async
 }
